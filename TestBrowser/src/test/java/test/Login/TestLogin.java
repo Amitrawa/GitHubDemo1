@@ -1,5 +1,7 @@
-package testLogin;
+package test.Login;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -11,7 +13,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TestLogin {
+
+	public class TestLogin {
 	
 	WebDriver driver;
 	
@@ -27,6 +30,7 @@ public class TestLogin {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
